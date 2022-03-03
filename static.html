@@ -2,14 +2,13 @@
    <head>
    </head>
    <body>
-       <div id="debug"></div>
-       <script>
-           fetch("Prova_Infra.json")
-              .then(response => response.json())
-              .then(data => {
-                  console.log(data.sentence)
-                  document.querySelector("#debug").innerText = data.sentence
-              })
-       </script>
+      {
+      "service": 
+         {"oracle": "ok", 
+         "redis": "ok", 
+         "mongo": "down", 
+         "pgsql": "down", 
+         "mysql": "ok"}
+      }
    </body>
 </html>
